@@ -1,0 +1,73 @@
+// Classe Principal
+class Principal {
+    
+}
+
+// Subclasse Produto
+class Produto extends Principal {
+    // atributos da subclsse
+    private String nome;
+    private String validade;
+    private int id;
+    private double valor;
+
+    // construtor
+    public Produto(String nome, String validade, int id, double valor) {
+        this.nome = nome;
+        this.validade = validade;
+        this.id = id;
+        this.valor = valor;
+    }
+
+             public String getNome() {
+        return nome;
+    }
+
+        public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+        public String getValidade() {
+        return validade;
+    }
+
+    public void setValidade(String validade) {
+        this.validade = validade;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    public double getValor() {
+        return valor;
+    }
+
+    public void setValor(double valor) {
+        this.valor = valor;
+    }
+
+    @Override
+    public String toString() {
+        return "Produto{" +
+                "nome='" + nome + '\'' +
+                ", validade='" + validade + '\'' +
+                ", id=" + id +
+                ", valor=" + valor +
+                '}';
+    }
+
+    
+    public void imprimirDetalhesProduto() {
+        System.out.println("Nome: " + nome);
+        System.out.println("Validade: " + validade);
+        System.out.println("ID: " + id);
+        System.out.println("Valor:" + valor);
+    }
+
+   
+    public void
